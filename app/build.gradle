@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        Default {
+            keyAlias 'yymin1022'
+            keyPassword 'dydals1022'
+            storeFile file('D:/AppProject/debug.keystore')
+            storePassword 'dydals1022'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.yong.screensaver"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+    implementation 'com.ssomai:android.scalablelayout:2.1.6'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    implementation files('libs/CaulySDK-3.4.22.jar')
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">화면보호기</string>
+    <string name="startService">서비스 시작</string>
+	<string name="stopService">서비스 중지</string>
+	<string name="serviceRunning">서비스가 실행중입니다</string>
+	<string name="clickToStart">여기를 눌러 화면보호기를 실행하세요</string>
+	<string name="windowHelp">안내문을 숨기려면 터치하세요\n잠금해제 : </string>
+	<string name="donation">광고제거 / 개발자에게 기부하기</string>
+	<string name="devInfo">개발자 정보</string>
+	<string name="volumeButton">볼륨버튼 누르기</string>
+	<string name="doubleTap">두번 터치하기</string>
+	<string name="longTap">길게 누르기</string>
+	<string name="unlockMethodText">블랙모드 해제 방법</string>
+	<string name="buttonMethodText">블랙모드 시작 방법</string>
+	<string name="notiButton">알림 누르기</string>
+	<string name="floatingButton">플로팅버튼 두번 터치하기 (길게 누르면 플로팅버튼이 사라집니다)</string>
+	<string name="detail">여기에 왜 수능 D-Day가 있는지 보려면 누르세요</string>
+	<string name="noticeDialog">안녕하세요,\n화면보호기 개발자 유용민입니다.\n저는 2018년 현재 일반계 과학중점 고등학교 3학년에 재학하고 있습니다.\n네. 여러분이 생각하시는 수능준비하는 그 고3 맞습니다.\n이에 따라 수능을 치는 2018년 11월 15일까지는 잠시 업데이트를 중단하고자 합니다.\n이번 업데이트에서는 기존 기능들이 최대한 안정적으로 작동하도록 하였으며, 기본적인 기능들을 보완하였습니다.\n수능이 끝나고 다시 사용자분들과 소통하고 개발할 수 있는 시기가 올때까지 조금만 기다려주세요.\n감사합니다.</string>
+	<string name="noticeDialogClose">닫기</string>
+	<string name="sat_dday">수능 D</string>
+	<string name="buy">광고제거 / 기부하기</string>
+	<string name="donatePencil">연필 3개 사주기</string>
+	<string name="donateNotebook">공책 5권 사주기</string>
+	<string name="donateBag">가방 사주기</string>
+	<string name="donateReally">금수저 전용</string>
+	<string name="removeAd">광고 제거하기</string>
+	<string name="already_purchased">이미 구매되었습니다</string>
+	<string name="buy_wait">잠시만 기다려주세요...</string>
+	<string name="buy_ready">구매하려면 누르세요</string>
+	<string name="developer">\n개발 : 성보고등학교 유용민\n</string>
+	<string name="share">화면보호기 앱을 공유해주세요!</string>
+	<string name="blog">개발자 블로그 방문하기</string>
+
+</resources>

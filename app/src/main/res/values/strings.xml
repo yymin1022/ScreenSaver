@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScreenSaver</string>
+    <string name="startService">Start Service</string>
+	<string name="stopService">Stop Service</string>
+	<string name="serviceRunning">Service is Running</string>
+	<string name="clickToStart">Click to start Screen Saver</string>
+	<string name="windowHelp">Touch to hide this text.\nIf you want to unlock, </string>
+	<string name="donation">AdRemove / Donation</string>
+	<string name="devInfo">Developer Info</string>
+	<string name="volumeButton">Press Volume Button</string>
+	<string name="doubleTap">Double Tap</string>
+	<string name="longTap">Long Tap</string>
+	<string name="unlockMethodText">Which one will you use to unlock Black Mode?</string>
+	<string name="buttonMethodText">Which one will you use to start Black Mode?</string>
+	<string name="notiButton">Touch Notification</string>
+	<string name="floatingButton">Double Tap Floating Button\nLong tap to remove Button.</string>
+	<string name="detail">Touch for Detail</string>
+	<string name="noticeDialog">Hi,\nI am ScreenSaver Developer Yongmin, Yoo.\nAs you know, I am Korean High School Student 3rd grade.\nAnd I have a very very important exam "SAT" in Nov. 2018.\nSo, I will stop developing app until 2018. 11. 15.\nIn this update, I did my best and stabilized app.\nPlease wait for me until 2018. 11. 15.\nThanks for using.</string>
+	<string name="noticeDialogClose">Close</string>
+	<string name="sat_dday">Developer\'s SAT Exam D</string>
+	<string name="buy">Remove Advertisement / Donation</string>
+	<string name="donatePencil">Donate a Pencil to Developer</string>
+	<string name="donateNotebook">Donate a Notebook to Developer</string>
+	<string name="donateBag">Donate a BackPack to Developer</string>
+	<string name="donateReally">Riches Only</string>
+	<string name="removeAd">Remove Advertisement</string>
+	<string name="already_purchased">Already Purchased</string>
+	<string name="buy_wait">Please Wait...</string>
+	<string name="buy_ready">Press Here to Purchase</string>
+	<string name="developer">\nDevelop : Yongmin Yoo in Sungbo High School(SouthKorea)\n</string>
+	<string name="share">Share this ScreenSaver Application!</string>
+	<string name="blog">Visit Developer\'s Blog!</string>
+
+</resources>

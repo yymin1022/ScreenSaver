@@ -1,0 +1,190 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="#c0c3c6">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2">
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:onClick="start"
+			android:text="@string/startService"
+			android:textColor="#616161"
+			android:background="#f2f2f2"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:onClick="stop"
+			android:text="@string/stopService"
+			android:textColor="#616161"
+			android:background="#f2f2f2"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:onClick="donate"
+			android:text="@string/donation"
+			android:textColor="#616161"
+			android:background="#f2f2f2"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:onClick="info"
+			android:text="@string/devInfo"
+			android:textColor="#616161"
+			android:background="#f2f2f2"/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:background="#f2f2f2">
+		
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:text="@string/unlockMethodText"
+				android:textColor="#616161"/>
+
+			<RadioGroup
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:id="@+id/unlockMethod"
+				android:background="#f2f2f2">
+
+				<RadioButton
+					android:textColor="#616161"
+					android:id="@+id/volumeButton"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="@string/volumeButton" 
+					android:onClick="volumeButton"/>
+
+				<RadioButton
+					android:textColor="#616161"
+					android:id="@+id/doubleTap"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="@string/doubleTap" 
+					android:onClick="doubleTap"/>
+
+				<RadioButton
+					android:textColor="#616161"
+					android:id="@+id/longTap"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="@string/longTap"
+					android:onClick="longTap"/>
+
+			</RadioGroup>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:background="#f2f2f2">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:text="@string/buttonMethodText"
+				android:textColor="#616161"/>
+		
+			<RadioGroup
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:id="@+id/startMethod"
+				android:background="#f2f2f2">
+
+				<RadioButton
+					android:textColor="#616161"
+					android:id="@+id/notiButton"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="@string/notiButton" 
+					android:onClick="notiButton"/>
+
+				<RadioButton
+					android:textColor="#616161"
+					android:id="@+id/floatingButton"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="@string/floatingButton" 
+					android:onClick="floatingButton"/>
+				
+		
+			</RadioGroup>
+		
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:id="@+id/mainLayout"
+			android:orientation="vertical"/>
+
+	</LinearLayout>
+
+</LinearLayout>
