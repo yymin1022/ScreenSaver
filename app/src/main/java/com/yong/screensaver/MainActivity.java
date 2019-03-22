@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements CaulyCloseAdListe
 		RadioGroup unlockMethodRadio = findViewById(R.id.unlockMethod);
 		RadioGroup startMethodRadio = findViewById(R.id.startMethod);
 		prefs = getApplicationContext().getSharedPreferences("androesPrefName", MODE_PRIVATE);
-		 ed = prefs.edit();
+		ed = prefs.edit();
 		switch(prefs.getInt("startMethod",0)){
 			case 0:
 				startMethodRadio.check(R.id.notiButton);
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements CaulyCloseAdListe
 		mCloseAd.setAdInfo(closeAdInfo);
 		mCloseAd.setCloseAdListener(this); 
 		mCloseAd.disableBackKey();
-		if((prefs.getBoolean("ad_removed",false)==false)){
+		if(!prefs.getBoolean("ad_removed",false)){
 			showBanner();
 		}else{
 			LinearLayout layout = findViewById(R.id.mainLayout);
@@ -98,7 +98,9 @@ public class MainActivity extends AppCompatActivity implements CaulyCloseAdListe
 
 	private void showDefaultClosePopup()
 	{
-		new AlertDialog.Builder(this).setTitle("").setMessage("종료 하시겠습니까?")
+		new AlertDialog.Builder(this)
+			.setTitle("")
+			.setMessage("종료 하시겠습니까?")
 			.setPositiveButton("예", new DialogInterface.OnClickListener() {
  			    @Override
  			    public void onClick(DialogInterface dialog, int which) {
@@ -121,7 +123,6 @@ public class MainActivity extends AppCompatActivity implements CaulyCloseAdListe
  	}	
  	@Override
  	public void onLeftClicked(CaulyCloseAd ad) {
-
  	}	
  	@Override
  	public void onRightClicked(CaulyCloseAd ad) {
