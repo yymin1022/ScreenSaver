@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements CaulyCloseAdListe
 		RadioGroup startMethodRadio = findViewById(R.id.startMethod);
 		prefs = getApplicationContext().getSharedPreferences("androesPrefName", MODE_PRIVATE);
 		ed = prefs.edit();
+		ed.apply();
 		switch(prefs.getInt("startMethod",0)){
 			case 0:
 				startMethodRadio.check(R.id.notiButton);
@@ -35,10 +36,8 @@ public class MainActivity extends AppCompatActivity implements CaulyCloseAdListe
 				startMethodRadio.check(R.id.floatingButton);
 				break;
 		}
-		switch(prefs.getInt("unlockMethod",0)){
+		switch(prefs.getInt("unlockMethod",1)){
 			case 0:
-				unlockMethodRadio.check(R.id.volumeButton);
-				break;
 			case 1:
 				unlockMethodRadio.check(R.id.doubleTap);
 				break;
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements CaulyCloseAdListe
 	
 	private void showBanner(){
 		LinearLayout layout = findViewById(R.id.mainLayout);
-		CaulyAdInfo adInfo= new CaulyAdInfoBuilder("TOeplGZT").effect("Circle").reloadInterval(1).enableDefaultBannerAd(true).build();
+		CaulyAdInfo adInfo= new CaulyAdInfoBuilder("TOeplGZT").effect("FadeIn").reloadInterval(1).enableDefaultBannerAd(true).build();
 		CaulyAdView adView = new CaulyAdView(this);
 		adView.setAdInfo(adInfo);
 		layout.addView(adView,0);
@@ -165,13 +164,6 @@ public class MainActivity extends AppCompatActivity implements CaulyCloseAdListe
 	
 	public void info(View v){
 		startActivity(new Intent(this, InfoActivity.class));
-	}
-	
-	public void volumeButton(View v){
-		ed.remove("unlockMethod");
-		ed.apply();
-		ed.putInt("unlockMethod", 0);
-		ed.apply();
 	}
 	
 	public void doubleTap(View v){

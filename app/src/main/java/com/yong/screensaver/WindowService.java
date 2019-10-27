@@ -54,34 +54,8 @@ public class WindowService extends Service
 		mView.setFocusableInTouchMode(true);
 		mManager = (WindowManager) getSystemService(WINDOW_SERVICE);
 		final TextView windowHelp = mView.findViewById(R.id.windowTV);
-		switch(prefs.getInt("unlockMethod",0)){
+		switch(prefs.getInt("unlockMethod",1)){
 			case 0:
-				windowHelp.setText(getResources().getString(R.string.windowHelp) + getResources().getString(R.string.volumeButton));
-				mView.setOnKeyListener(new OnKeyListener(){
-					@Override
-					public boolean onKey(View p1, int keyCode, KeyEvent keyEvent)
-					{
-						if(keyEvent.getAction()==KeyEvent.ACTION_DOWN){
-							switch(keyCode){
-								case KeyEvent.KEYCODE_VOLUME_UP:
-									stopSelf();
-									break;
-								case KeyEvent.KEYCODE_VOLUME_DOWN:
-									stopSelf();
-									break;
-							}
-						}
-						return true;
-					}
-				});
-				mView.setOnTouchListener(new OnTouchListener() {
-						@Override
-						public boolean onTouch(View v, MotionEvent event) {
-							windowHelp.setText("");
-							return true;
-						}
-					});
-				break;
 			case 1:
 				windowHelp.setText(getResources().getString(R.string.windowHelp) + getResources().getString(R.string.doubleTap));
 				mView.setOnTouchListener(new OnTouchListener() {
