@@ -9,7 +9,6 @@
 	<string name="windowHelp">Touch to hide this text.\nIf you want to unlock, </string>
 	<string name="donation">AdRemove / Donation</string>
 	<string name="devInfo">Developer Info</string>
-	<string name="volumeButton">Press Volume Button</string>
 	<string name="doubleTap">Double Tap</string>
 	<string name="longTap">Long Tap</string>
 	<string name="unlockMethodText">Which one will you use to unlock Black Mode?</string>

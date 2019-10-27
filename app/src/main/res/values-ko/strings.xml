@@ -9,7 +9,6 @@
 	<string name="windowHelp">안내문을 숨기려면 터치하세요\n잠금해제 : </string>
 	<string name="donation">광고제거 / 개발자에게 기부하기</string>
 	<string name="devInfo">개발자 정보</string>
-	<string name="volumeButton">볼륨버튼 누르기</string>
 	<string name="doubleTap">두번 터치하기</string>
 	<string name="longTap">길게 누르기</string>
 	<string name="unlockMethodText">블랙모드 해제 방법</string>
